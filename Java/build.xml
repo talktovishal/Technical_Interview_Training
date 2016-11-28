@@ -1,0 +1,57 @@
+<project name="Java" default="link" basedir="." >
+        <property 
+            environment="env"  >
+        </property>
+        <property 
+            location="src" 
+            name="src"  >
+        </property>
+        <property
+            name="env.ConfigurationName"
+            value="Debug"  >
+        </property>
+        <property 
+            location="${env.ConfigurationName}/build" 
+            name="build"  >
+        </property>
+        <property 
+            location="${env.ConfigurationName}/dist" 
+            name="dist"  >
+        </property>
+        <path 
+            id="project.classpath"  >
+            <pathelement 
+                location="${build}"  >
+            </pathelement>
+            <pathelement 
+                location="${src}"  >
+            </pathelement>
+        </path>
+    <target name="clean" >
+        <delete 
+            dir="${build}"  >
+        </delete>
+        <delete 
+            dir="${dist}"  >
+        </delete>
+    </target>
+    <target name="compile" depends="init" >
+        <javac
+            debug="true"
+            destdir="${build}" 
+            srcdir="${src}"  >
+        </javac>
+    </target>
+    <target name="init" >
+        <mkdir dir="${build}" >
+        </mkdir>
+        <mkdir dir="${dist}" >
+        </mkdir>
+    </target>
+    <target name="link" depends="compile" >
+        <jar 
+            jarfile="${dist}/Java.jar" 
+            basedir="${build}"  >
+        </jar>
+    </target>
+</project>

@@ -1,0 +1,17 @@
+<isproject version="1" revision="1" type="Ant" >
+    <guid>{709D292C-64FD-4B11-A077-4D1E4C9870C1}</guid>
+    <buildfile>build.xml</buildfile>
+    <configuration
+        build="link"
+        clean="clean"
+    >
+    Debug
+    </configuration>
+    <configuration
+    >
+    Release
+    </configuration>
+    <writeable
+        buildfile="1"
+    />
+</isproject>
