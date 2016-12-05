@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Lecture1_CSharp.Lecture1.Arrays;
 using Lecture1_CSharp.Lecture2;
+using Lecture1_CSharp.Lecture3_Searching;
 
 namespace Lecture1_CSharp {
     public class Program {
@@ -60,9 +61,16 @@ namespace Lecture1_CSharp {
             //TestSpiral();
             //TestDuplicate();
             //TestMissingPositive();
-            TestFactorial();
+            //TestFactorial();
             //TestPermutations();
             //TestGetPermutationsDuplicates();
+            TestBinarySearchCounts();
+        }
+
+        private static void TestBinarySearchCounts()
+        {
+            Console.WriteLine(AllPossibleElements.BinarySearch(new List<int>() { 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 7, 7, 8, 8, 8, 8, 9, 9, 10, 10, 10}, 1));
+            Console.WriteLine(AllPossibleElements.TotalCount(new List<int>() { 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 7, 7, 8, 8, 8, 8, 9, 9, 10, 10, 10 }, 1));
         }
 
         private static void TestFactorial()

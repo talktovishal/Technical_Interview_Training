@@ -28,7 +28,7 @@ public class Palindrome
 		//!Character.isLetterOrDigit(char)
 	}
 
-	public static void main(String[] args) {
+	public static void main_(String[] args) {
 		Palindrome p = new Palindrome();
 		System.out.println("Print: p.isPalindrome \t" + p.isPalindrome("A man, a plan, a canal: Panama"));
 		System.out.println("Print: p.isPalindrome \t" + p.isPalindrome("race a car"));

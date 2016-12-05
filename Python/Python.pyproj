@@ -25,6 +25,9 @@
     <Compile Include="anagrams.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Fibonacci.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Lecture1\ThreeSumFast.py" />
     <Compile Include="Lecture1\ThreeSum.py" />
     <Compile Include="Lecture1\BubbleSort.py">
