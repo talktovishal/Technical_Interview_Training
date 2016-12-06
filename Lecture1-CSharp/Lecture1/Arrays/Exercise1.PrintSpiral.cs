@@ -5,6 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Lecture1_CSharp.Lecture1.Arrays {
+    /*
+     Question:
+Print a 2-d array (list of lists) in spiral form
+Input:
+        1    33   3   14
+        15   16   7   38
+        92   10  11  12
+        13   14  15  16
+Output: 
+1 33 3 14 38 12 16 15 14 13 92 15 16 7 11 10 
+
+Note it doesn't have to be a squre matrix.
+
+    */
+
+
     public class PrintSpiral {
         public List<int> spiralOrder(List<List<int>> A)
         {

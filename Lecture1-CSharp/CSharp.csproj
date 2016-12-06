@@ -43,24 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lecture1\Arrays\BucketSort.DuplicateInArray.cs" />
-    <Compile Include="Lecture1\Arrays\AfterLearningSorting.LargesNumberString.cs" />
-    <Compile Include="Lecture1\Arrays\MergeIntervals.cs" />
+    <Compile Include="Lecture1\String\Exercise1.LengthOfLastWord.cs" />
+    <Compile Include="Lecture1\String\Exercise2.IsPalindrome.cs" />
+    <Compile Include="Lecture3-Searching\Exercise2.RotatedArraySearch.cs" />
+    <Compile Include="Lecture3-Sorting\BucketSort.DuplicateInArray.cs" />
+    <Compile Include="Lecture3-Sorting\AfterLearningSorting.LargesNumberString.cs" />
+    <Compile Include="Lecture1\Arrays\Exercise3.MergeIntervals.cs" />
     <Compile Include="Lecture1\Arrays\Exercise1.PrintSpiral.cs" />
-    <Compile Include="Lecture1\Arrays\Demo-Vishal-Broook.SmallestPositiveNumberModifyArray.cs" />
+    <Compile Include="Lecture1\Demo-Vishal-Broook.SmallestPositiveNumberModifyArray.cs" />
     <Compile Include="Lecture1\Arrays\Exercise2.WaveArray.cs" />
-    <Compile Include="Lecture1\Complexity.cs" />
-    <Compile Include="Lecture1\DeleteDuplicateConstantSpace.cs" />
-    <Compile Include="Lecture1\DeleteDuplicateExtraSpace.cs" />
-    <Compile Include="Lecture1\StringExercises.cs" />
-    <Compile Include="Lecture1\String\BruteForceStrMatch.cs" />
+    <Compile Include="Lecture1\Demo.Complexity.cs" />
+    <Compile Include="Lecture1\Arrays\DeleteDuplicateConstantSpace.cs" />
+    <Compile Include="Lecture1\Arrays\DeleteDuplicateExtraSpace.cs" />
+    <Compile Include="Lecture1\String\StringExercises.cs" />
+    <Compile Include="Lecture1\String\Demo.BruteForceStrMatch.cs" />
     <Compile Include="Lecture1\String\ValidIpAddress.cs" />
-    <Compile Include="Lecture1\ThreeSumFast.cs" />
-    <Compile Include="Lecture1\ThreeSum.cs" />
-    <Compile Include="Lecture1\BubbleSort.cs" />
-    <Compile Include="Lecture2\FactorialRecursion.cs" />
-    <Compile Include="Lecture2\Permutations.cs" />
-    <Compile Include="Lecture3-Searching\AllPossibleElements.cs" />
+    <Compile Include="Lecture1\Demo.ThreeSumFast.cs" />
+    <Compile Include="Lecture1\Demo.ThreeSum.cs" />
+    <Compile Include="Lecture3-Sorting\BubbleSort.cs" />
+    <Compile Include="Lecture2\Demo.FactorialRecursion.cs" />
+    <Compile Include="Lecture2\Demo.Permutations.cs" />
+    <Compile Include="Lecture3-Searching\Exercise1.AllPossibleElements.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
