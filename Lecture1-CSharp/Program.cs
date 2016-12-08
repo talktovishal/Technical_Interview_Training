@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Lecture1_CSharp.Lecture1.Arrays;
 using Lecture1_CSharp.Lecture2;
 using Lecture1_CSharp.Lecture3_Searching;
+using Lecture1_CSharp.Lecture3_Sorting;
 
 namespace Lecture1_CSharp {
     public class Program {
@@ -64,12 +65,39 @@ namespace Lecture1_CSharp {
             //TestFactorial();
             //TestPermutations();
             //TestGetPermutationsDuplicates();
-            TestBinarySearchCounts();
+            //TestBinarySearchCounts();
+            TestSorts();
+        }
+
+
+        private static void TestSorts()
+        {
+            List<int> unsortedList = new List<int>() { 1, 3, 5, 6, 2, 4, 8, 2, 4, 6};
+            var unsortedA = unsortedList.ToArray<int>();
+
+            List<int> unsortedList2 = new List<int>() { 3 };
+            var unsorted2A = unsortedList2.ToArray<int>();
+
+            List<int> unsortedList3 = new List<int>() { 3, 3, 3, 3, 3, 3 };
+            var unsorted3A = unsortedList3.ToArray<int>();
+
+            Mergesort.Run(unsortedA);
+            Mergesort.Run(unsorted2A);
+            Mergesort.Run(unsorted3A);
+
+            //test
+            foreach (var item in new List<int[]>() {unsortedA, unsorted2A, unsorted3A }) {
+                for (int i = 0; i < item.Length - 2; i++) {
+                    if (item[i] > item[i + 1]) {
+                        throw new ApplicationException("sort failed.");
+                    }
+                }
+            }
         }
 
         private static void TestBinarySearchCounts()
         {
-            Console.WriteLine(AllPossibleElements.BinarySearch(new List<int>() { 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 7, 7, 8, 8, 8, 8, 9, 9, 10, 10, 10}, 1));
+            Console.WriteLine(AllPossibleElements.BinarySearch(new List<int>() { 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 7, 7, 8, 8, 8, 8, 9, 9, 10, 10, 10 }, 1));
             Console.WriteLine(AllPossibleElements.TotalCount(new List<int>() { 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 7, 7, 8, 8, 8, 8, 9, 9, 10, 10, 10 }, 1));
         }
 
