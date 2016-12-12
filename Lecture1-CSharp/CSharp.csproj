@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Lecture1\String\Exercise1.LengthOfLastWord.cs" />
     <Compile Include="Lecture1\String\Exercise2.IsPalindrome.cs" />
+    <Compile Include="Lecture1\String\StringPhoneNumber.cs" />
+    <Compile Include="Lecture1\WhiteBoard.Day1.RLE-Encoding.cs" />
+    <Compile Include="Lecture2\ImplementQueueWithMaxApi.cs" />
     <Compile Include="Lecture3-Searching\Exercise2.RotatedArraySearch.cs" />
     <Compile Include="Lecture3-Sorting\BucketSort.DuplicateInArray.cs" />
     <Compile Include="Lecture3-Sorting\AfterLearningSorting.LargesNumberString.cs" />
@@ -67,11 +70,13 @@
     <Compile Include="Lecture3-Sorting\InsertionSort.cs" />
     <Compile Include="Lecture3-Sorting\Mergesort.cs" />
     <Compile Include="Lecture3-Sorting\SelectionSort.cs" />
+    <Compile Include="Lecture4\HeapPseudocode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Lecture2\Stack.Exercise1.ComputeBuildingsWithSunset.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>80307115-4957-4598-a9ce-b0c4a5126a10</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Lecture1\ThreeSumFast.py</StartupFile>
+    <StartupFile>BinaryTree.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,12 +25,18 @@
     <Compile Include="anagrams.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BinaryTree.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Fibonacci.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Lecture1\ThreeSumFast.py" />
     <Compile Include="Lecture1\ThreeSum.py" />
     <Compile Include="Lecture1\BubbleSort.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lecture2\ReverseLinkedList.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="LinkedList.py">
@@ -40,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Lecture1\" />
+    <Folder Include="Lecture2\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

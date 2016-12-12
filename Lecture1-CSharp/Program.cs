@@ -7,6 +7,8 @@ using Lecture1_CSharp.Lecture1.Arrays;
 using Lecture1_CSharp.Lecture2;
 using Lecture1_CSharp.Lecture3_Searching;
 using Lecture1_CSharp.Lecture3_Sorting;
+using Lecture1_CSharp.Lecture1.String;
+using Lecture1_CSharp.Lecture1;
 
 namespace Lecture1_CSharp {
     public class Program {
@@ -66,13 +68,32 @@ namespace Lecture1_CSharp {
             //TestPermutations();
             //TestGetPermutationsDuplicates();
             //TestBinarySearchCounts();
-            TestSorts();
+            //TestSorts();
+            //TestStringPhoneNumber();
+            TestRleEncoding();
         }
 
+        //RleEncoding
+        private static void TestRleEncoding()
+        {
+            Console.WriteLine(RleEncoding.Encode("aaaabcccaa"));
+            Console.WriteLine(RleEncoding.Encode("eeeffffee"));
+            Console.WriteLine(RleEncoding.Encode("a"));
+            Console.WriteLine(RleEncoding.Encode("abbcccd"));
+            Console.WriteLine(RleEncoding.Encode("abbcccddddeeeeef"));
+
+            //Console.WriteLine(RleEncoding.Decode("4a1b3c2a"));
+            //Console.WriteLine(RleEncoding.Decode("3e4f2e"));
+        }
+
+        private static void TestStringPhoneNumber()
+        {
+            StringPhoneNumber.PrintPhoneNumber(new int[] { 0, 1, 2, 3, 4 });
+        }
 
         private static void TestSorts()
         {
-            List<int> unsortedList = new List<int>() { 1, 3, 5, 6, 2, 4, 8, 2, 4, 6};
+            List<int> unsortedList = new List<int>() { 1, 3, 5, 6, 2, 4, 8, 2, 4, 6 };
             var unsortedA = unsortedList.ToArray<int>();
 
             List<int> unsortedList2 = new List<int>() { 3 };
@@ -86,7 +107,7 @@ namespace Lecture1_CSharp {
             Mergesort.Run(unsorted3A);
 
             //test
-            foreach (var item in new List<int[]>() {unsortedA, unsorted2A, unsorted3A }) {
+            foreach (var item in new List<int[]>() { unsortedA, unsorted2A, unsorted3A }) {
                 for (int i = 0; i < item.Length - 2; i++) {
                     if (item[i] > item[i + 1]) {
                         throw new ApplicationException("sort failed.");

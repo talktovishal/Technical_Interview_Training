@@ -41,6 +41,7 @@ namespace Lecture1_CSharp.Lecture1.Arrays {
                     arr[indexToModify] = -1 * arr[indexToModify];//toggle the sign to specify it's present.
                 //Console.WriteLine(string.Join(",", arr));
             }
+
             //Console.WriteLine(string.Join(",", arr));
             // Return the first index value at which is positive
             for (i = startAt; i < modifiedSize; i++) {
@@ -52,8 +53,22 @@ namespace Lecture1_CSharp.Lecture1.Arrays {
             return modifiedSize + 1;
         }
 
-        /* Find the smallest positive missing number in an array that contains
-          both positive and negative integers */
+        /* 
+         * Find the smallest positive missing number in an array that contains
+           both positive and negative integers.
+          
+           Basic algorithm: You can do sort but that NlogN. Hence, here we choose to 
+           modify the array itself. 
+
+           Step1: We segreegate the array into all -ve elements on one side and +ve elements
+           on the other side.
+           
+           Step2: We then only consider the +ve part of the array. Since we have to find the 
+           minimum missing element, this boils down to finding do we have an element 
+           present in the particular 0 - N-1  (where N is actuall modified N). Once we 
+           do the toggle business, we can then go ahead and do another walkthrough 
+           and simply output the first +ve number that we find or we output N (N = modified N).
+        */
         public int firstMissingPositive(List<int> A)
         {
             int[] arr = A.ToArray<int>();
