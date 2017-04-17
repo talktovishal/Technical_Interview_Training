@@ -67,6 +67,7 @@
     <Compile Include="Lecture2\Demo.FactorialRecursion.cs" />
     <Compile Include="Lecture2\Demo.Permutations.cs" />
     <Compile Include="Lecture3-Searching\Exercise1.AllPossibleElements.cs" />
+    <Compile Include="Lecture3-Sorting\ComputeSalaryThreshold.cs" />
     <Compile Include="Lecture3-Sorting\InsertionSort.cs" />
     <Compile Include="Lecture3-Sorting\Mergesort.cs" />
     <Compile Include="Lecture3-Sorting\SelectionSort.cs" />

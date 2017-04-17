@@ -9,7 +9,16 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python", "Python\Python.pyp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPlusPlus", "CPlusPlus\CPlusPlus.vcxproj", "{C0B5A85C-D728-4CD0-8E63-FD23B9AF5766}"
 EndProject
-Project("{5E959CCA-708F-4C7A-A24E-356CD4FBA7F7}") = "Java", "Java\Java.isproj", "{709D292C-64FD-4B11-A077-4D1E4C9870C1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9D18187-3197-483E-B654-5B1E9199798B}"
+EndProject
+Project("{BE0A4C86-FC82-4F70-8ED6-D24C8B13E7BF}") = "JavaProject", "JavaProject\JavaProject.javaproj", "{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeFellows-Spring-2017", "CodeFellows-Spring-2017", "{4029285A-FBA7-44B6-B9EA-71C5F4D9976C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hw1", "hw1", "{506C3756-61E6-4F23-97FE-55D95BBE330D}"
+	ProjectSection(SolutionItems) = preProject
+		HW1- Linked List- Q1. Delete an item from a linked list.js = HW1- Linked List- Q1. Delete an item from a linked list.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,19 +59,23 @@ Global
 		{C0B5A85C-D728-4CD0-8E63-FD23B9AF5766}.Release|x64.Build.0 = Release|x64
 		{C0B5A85C-D728-4CD0-8E63-FD23B9AF5766}.Release|x86.ActiveCfg = Release|Win32
 		{C0B5A85C-D728-4CD0-8E63-FD23B9AF5766}.Release|x86.Build.0 = Release|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Debug|Any CPU.Build.0 = Debug|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Debug|x64.ActiveCfg = Debug|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Debug|x86.ActiveCfg = Debug|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Debug|x86.Build.0 = Debug|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Debug|x86.Deploy.0 = Debug|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Release|Any CPU.ActiveCfg = Release|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Release|x64.ActiveCfg = Release|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Release|x86.ActiveCfg = Release|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Release|x86.Build.0 = Release|Win32
-		{709D292C-64FD-4B11-A077-4D1E4C9870C1}.Release|x86.Deploy.0 = Release|Win32
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Debug|x64.Build.0 = Debug|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Debug|x86.Build.0 = Debug|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|x64.ActiveCfg = Release|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|x64.Build.0 = Release|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|x86.ActiveCfg = Release|Any CPU
+		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{506C3756-61E6-4F23-97FE-55D95BBE330D} = {4029285A-FBA7-44B6-B9EA-71C5F4D9976C}
 	EndGlobalSection
 EndGlobal

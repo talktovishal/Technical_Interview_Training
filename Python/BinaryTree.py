@@ -1,11 +1,12 @@
-
-
 import Queue
 # Node has a value and two children
 class Node:
-    def __init__(self, val):
+    def __init__(self, val, counter):
+        self.name = chr(ord('a') + counter)
         self.leftChild = None
         self.rightChild = None
+        self.AggregatedSum = 0
+        self.InTheValidPath = False
         self.value = val
 
 # tree has a root node. that's the only 
@@ -15,6 +16,7 @@ class Tree:
     #constructor, empty root.
     def __init__(self):
         self.root = None
+        self.size = 0;
 
     def getRoot(self):
         return self.root
@@ -23,9 +25,10 @@ class Tree:
     def add(self, val):
         #if it's empty
         if(self.root == None):
-            self.root = Node(val)
+            self.root = Node(val, self.size)
         else:
             self.addInternal(val, self.root)
+        self.size += 1        
 
     #recursive add
     def addInternal(self, val, node):
@@ -33,12 +36,12 @@ class Tree:
             if(node.leftChild != None):
                 self.addInternal(val, node.leftChild)
             else:
-                node.leftChild = Node(val)
+                node.leftChild = Node(val, self.size)
         else:
             if(node.rightChild != None):
                 self.addInternal(val, node.rightChild)
             else:
-                node.rightChild = Node(val)
+                node.rightChild = Node(val, self.size)
 
 
 
@@ -76,6 +79,7 @@ class Tree:
                 if node.rightChild:
                     queue.put(node.rightChild)
                 print node.value
+                print node.name
 
 
 
@@ -95,6 +99,39 @@ class Tree:
         if node.rightChild:
             self.traverse_dfs_preorder_internal(node.rightChild)
 
+
+    def printSinglePath(self):
+        node = self.root
+        while(node != None and node.InTheValidPath):
+            print node.name
+            print node.value
+            if(node.leftChild and node.leftChild.InTheValidPath):
+                node = node.leftChild
+            elif(node.rightChild and node.rightChild.InTheValidPath):
+                node = node.rightChild
+            else:
+                node = None
+
+
+    def doesSumExist(self, sum):
+        if(self.root != None):
+            doesExist = self.doesSumExist_internal(self.root, 0, sum)
+            if doesExist:
+                printSinglePath()
+            else:
+                print('does not exist')
+
+
+    def doesSumExist_internal(self, node, currentSum, sumNeeded):
+        node.AggregatedSum = currentSum + node.value
+        if(node.AggregatedSum == sumNeeded):
+            node.InTheValidPath = True
+            return True
+        if node.leftChild and node.InTheValidPath != True:
+            node.InTheValidPath = self.doesSumExist_internal(node.leftChild, node.AggregatedSum, sumNeeded)
+        if node.rightChild and node.InTheValidPath != True:
+            node.InTheValidPath = self.doesSumExist_internal(node.rightChild, node.AggregatedSum, sumNeeded)
+        return node.InTheValidPath
 
 
 
@@ -122,3 +159,5 @@ print ('tree.traverse_dfs_preorder()')
 tree.traverse_dfs_preorder()
 print tree.find(10)
 print (tree.find(213)).value
+tree.doesSumExist(124)
+##tree.doesSumExist(122)
