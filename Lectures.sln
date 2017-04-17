@@ -13,12 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{BE0A4C86-FC82-4F70-8ED6-D24C8B13E7BF}") = "JavaProject", "JavaProject\JavaProject.javaproj", "{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeFellows-Spring-2017", "CodeFellows-Spring-2017", "{4029285A-FBA7-44B6-B9EA-71C5F4D9976C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hw1", "hw1", "{506C3756-61E6-4F23-97FE-55D95BBE330D}"
-	ProjectSection(SolutionItems) = preProject
-		HW1- Linked List- Q1. Delete an item from a linked list.js = HW1- Linked List- Q1. Delete an item from a linked list.js
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFellows-Spring-2017-Javascript", "CodeFellows-Spring-2017-Javascript\CodeFellows-Spring-2017-Javascript.csproj", "{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,11 +66,20 @@ Global
 		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|x64.Build.0 = Release|Any CPU
 		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|x86.ActiveCfg = Release|Any CPU
 		{6EB86517-A3FC-43FF-BAB1-2C0DE13289F4}.Release|x86.Build.0 = Release|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Debug|x64.Build.0 = Debug|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Debug|x86.Build.0 = Debug|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Release|x64.ActiveCfg = Release|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Release|x64.Build.0 = Release|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Release|x86.ActiveCfg = Release|Any CPU
+		{53A0B456-F80E-4D3B-9FAD-6B9B5D97F3B4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{506C3756-61E6-4F23-97FE-55D95BBE330D} = {4029285A-FBA7-44B6-B9EA-71C5F4D9976C}
 	EndGlobalSection
 EndGlobal
