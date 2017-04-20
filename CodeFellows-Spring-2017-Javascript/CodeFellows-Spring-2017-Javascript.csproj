@@ -46,9 +46,16 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="hw1\HW1- Arrays - Q2. Merge Intervals.js" />
+    <Content Include="hw1\HW1- Arrays- Q3. Find out smallest positive missing number from an unsorted array.js" />
     <Content Include="hw1\HW1- Linked List- Q1. Delete an item from a linked list.js" />
     <Content Include="hw1\HW1- Linked List- Q2. Rearrange linked list so that all even positioned nodes are together - Copy.js" />
     <Content Include="hw1\HW1- Array - Q1 - Print spiral clockwise and counter-clockwise traversal of 2D array.js" />
+    <Content Include="hw2\HW2- Stacks and Queue Q3- Stack with Max API.js" />
+    <Content Include="hw2\HW2- Strings Q1- compute all mnemonics for a phone number.js" />
+    <Content Include="hw2\HW2- Strings Q2- Implement run length encoding.js" />
+    <Content Include="hw2\HW2- Strings Q3- Test Palindromicity for string.js" />
+    <Content Include="hw2\HW2- Towers of Hanoi.js" />
+    <Content Include="hw3\hw3-radixsort.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
